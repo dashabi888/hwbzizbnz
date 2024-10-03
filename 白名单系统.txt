@@ -1,0 +1,35 @@
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "确认身份",
+    Text = "正在验证....",
+    Duration = 5, --时间
+})
+
+local a=tostring(game.Players.LocalPlayer.Character);
+
+if a=="用户名"then
+_G.暴龙战士=true
+elseif a=="用户名"then
+_G.暴龙战士=true
+end
+if _G.暴龙战士==true then
+    local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "验证结果",
+    Text = a.."验证身份成功",
+    Duration = 5,
+})
+  wait(3) --等待三秒
+  loadstring(game:HttpGet("https://github.com/dashabi888/dbznkzbznzj/blob/78356f1e27b680ed209da7e7aee3007b2a38ff89/%EF%BC%88%E7%9C%9F%EF%BC%89.txt"))()
+    else --验证失败执行↓
+setclipboard("615109797")
+local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+    Title = "验证失败",
+    Text = "你并没有白名单已复制链接加入群获得白名单",
+    Duration = 10, --时间
+})
+end
